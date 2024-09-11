@@ -1,0 +1,403 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* laptop navbar */
+
+.nav {
+    color: white;
+    position: fixed;
+    height: 100%;
+    background-color: rgb(35, 35, 35);
+    /* padding: 0 !important; or using p-0 class */
+}
+
+.nav img {
+    width: 100%;
+    height: 20%;
+}
+
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0; /* or using p-0 class */
+    width: 100%;
+    height: 80%;
+}
+
+.nav ul li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.nav ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.nav ul i {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.nav ul li:hover {
+    background-color: black;
+}
+
+.home {
+    background-color: black;
+}
+
+
+
+/* mobile and tablet navbar */
+
+.navmo {
+    position: fixed;
+    background-color: rgba(35, 35, 35, 0.6);
+    text-align: center;
+    padding: 0;
+}
+
+.navmo ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    margin-bottom: -0.5rem;
+}
+
+.navmo ul a {
+    text-decoration: none;
+    color: rgb(148, 148, 148);
+    font-size: 1rem;
+}
+
+
+
+
+
+
+#main {
+    padding-left: 12rem;
+}
+
+
+.content .intro {
+    text-align: center;
+    padding: 5rem 0 1rem 0;
+}
+
+.content .intro h1 {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+.content .back {
+    background-image: url(/image/man_smoke.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150vh;
+}
+
+
+
+#about {
+    padding-top: 7rem;
+}
+
+.myname {
+    padding-bottom: 10rem;
+}
+
+.nameText {
+    text-align: justify;
+}
+
+
+.ability p {
+    padding-top: 2%;
+    color: rgb(108, 108, 108);
+    font-size: large;
+}
+
+.progress-bar {
+    background-color: rgb(108, 108, 108) !important; 
+}
+
+.progress {
+    height: 2rem !important;
+    border-radius: 0 !important;
+    margin-bottom: 2%;
+}
+
+
+
+.skills {
+    border: 1px solid  rgb(233, 233, 216);
+    background-color: rgb(233, 233, 216);
+    color: rgb(32, 32, 32);
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-left: 0.1rem !important;
+    margin-right: 0.1rem !important;
+    padding: 4% 0 2% 0;
+}
+
+.number {
+    font-size: x-large;
+    margin-bottom: -2%;
+}
+
+
+
+.price table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.price table :hover {  
+    opacity: 0.95;
+}
+
+.price table tr {
+    border-top: 1px solid rgb(126, 126, 126);
+}
+
+#exception1 {
+    border-bottom: 1px solid rgb(163, 163, 163);   
+    font-size: x-large;
+    color: rgb(42, 42, 42);
+    padding-bottom: 0;
+}
+
+#exception2 {
+    padding-top: 0;
+    color: rgb(90, 90, 90);
+}
+
+.price table th {
+    padding: 2rem 0;
+    font-size: x-large;
+    color: rgb(163, 163, 163);
+    background-color: rgb(52, 52, 52);
+    border-top: 1px solid rgb(52, 52, 52);
+}
+
+.price table td {
+    padding: 1rem 0;
+    color: rgb(60, 60, 60);
+    background-color: rgb(163, 163, 163);
+}
+
+#signup {
+    background-color: rgb(149, 149, 149);
+    padding: 2rem 0;
+}
+
+#signup button {
+    background-color: rgb(163, 163, 163);
+    border: 1px solid rgb(163, 163, 163);
+    color: rgb(60, 60, 60);
+    padding: 0.5rem 1rem;
+}
+
+
+
+.reputation {
+    display: flex;
+    padding-top: 1rem;
+    color: rgb(138, 138, 138);
+}
+
+.reputation img {
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+}
+
+.discription1 {
+    padding: 1rem;
+}
+
+.discription1 p {
+    padding-left: 1rem;
+}
+
+.discription2 {
+    display: flex;
+}
+
+
+
+
+.myphoto {
+    padding-bottom: 10rem;
+}
+
+.myphoto img {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+
+
+.contact {
+    padding-bottom: 9rem;
+}
+
+.message {
+    padding-top: 3rem;
+    color: rgb(138, 138, 138);
+    font-size: medium;
+}
+
+
+
+
+/* pulic classes */
+
+.title {
+    border-bottom: 1px solid white;
+    max-width: max-content ; /* we dont need to determaine a specific width for the titles because in the tablet and mobile screens we will have to change the font and the width of the titles again.  */
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+
+.icon {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.icon p {
+    color: rgb(138, 138, 138);
+    font-size: medium;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+.icon i {
+    font-size: xx-large;
+}
+
+
+form {
+display: flex;
+flex-direction: column;
+}
+
+form input {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+button {
+    background-color: rgb(233, 233, 216);
+    color: rgb(45, 45, 45);
+    padding: 1rem;
+}
+
+button:hover{
+    background-color: rgb(177, 177, 177);
+}
+
+
+
+.footer i {
+    font-size: x-large;
+    padding-right: 0.3%;
+    color: rgb(177, 177, 177);
+}
+
+.footer p {
+    color: rgb(138, 138, 138);
+    padding-top: 1%; /* or  putting br Tag in html */
+    
+}
+
+.footer a {
+    color: rgb(138, 138, 138);
+}
+
+.footer a:hover {
+    color: rgb(0, 171, 0);
+}
+
+
+
+/* tablet and mobile */
+
+@media (max-width: 768px) {
+
+    #main {
+        padding-left: 2rem;
+        padding-right: 0;
+    }
+    
+    
+    .content .intro {
+        text-align: center;
+        padding: 5rem 0 1rem 0;
+    }
+
+
+    .content .intro h1 {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+
+
+    .content .back {
+        height: 70vh;
+    }
+
+
+    .ability p {
+        font-size: medium;
+    }
+
+    .skills div {
+        padding: 0.5% 0 0.5% 0;
+    }
+
+    .number {
+        margin-bottom: -1%;
+    }
+
+    
+    
+    
+    .reputation img {
+        width: 20%;
+        height: 20%;
+    }
+    
+    .discription1 {
+        padding: 1.5rem;
+    }
+    
+    .discription1 p {
+        padding-left: 0.5rem;
+    }
+
+}

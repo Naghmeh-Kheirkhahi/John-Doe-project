@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- container -->
+    <div class="container-fluid bg-black">
+        <div class="row">
+            <!-- menu laptop -->
+            <div class="col-1 text-white p-0 nav d-none d-sm-block"> 
+                <img src="image/man_smoke.jpg" alt="">
+                
+                <ul>
+                    <a href="#"><li class="home">
+                        <i class="fa fa-home"></i>
+                        <br>
+                        <p>HOME</p>
+                    </li></a>
+
+                    <a href="#about"><li>
+                        <i class='fas fa-user'></i>
+                        <br>
+                        <p>ABOUT</p>
+                    </li></a>
+
+                    <a href="#photos"><li>
+                        <i class="fa fa-eye"></i>
+                        <br>
+                        <p>PHOTOS</p>
+                    </li></a>
+
+                    <a href="#contact"><li>
+                        <i class="fa fa-envelope"></i>
+                        <br>
+                        <p>CONTACT</p>
+                    </li></a>
+                </ul>
+            </div>
+
+
+            <!-- menu tablet and mobile -->
+            <div class="col-12 col-sm-1 text-white navmo d-block d-sm-none">
+                
+                <ul>
+                    <a href="#"><li>
+                        <p>HOME</p>
+                    </li></a>
+
+                    <a href="#about"><li>
+                        <p>ABOUT</p>
+                    </li></a>
+
+                    <a href="#photos"><li>
+                        <p>PHOTOS</p>
+                    </li></a>
+
+                    <a href="#contact"><li>
+                        <p>CONTACT</p>
+                    </li></a>
+                </ul>
+            </div>
+
+
+            <!-- John Doe -->
+            <div class="col-11 text-white" id="main">
+
+                <!-- content -->
+                <div class="content">
+                    <div class="intro">
+                        <h1>I'm John Doe</h1>
+                        <p>Photographer and Web Designer</p>
+                    </div>
+                    <div class="back"></div>
+                </div>
+
+                <div id="about" class="ps-5 pe-5">
+                    <div class="myname">
+                        <h2 class="title">My Name</h2>
+                        <p class="nameText text-secondary pt-2 pb-2">Some text about me. 
+                        Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                        laboris nisi ut aliquip ex ea commodo consequat.</p> 
+                        <!-- alt+z = break the text -->
+
+                        <!-- My Skills -->
+                        <h3 class="subtitle">My Skills</h3>
+
+                        <!-- progress bars -->
+                        <div class="ability pb-5">
+                            
+                            <p>Photography</p>
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+
+                            <p>Web Design</p>
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+
+                            <p>Photoshop</p>
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 50%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skills row">  <!-- we can define a list but how???? define a row class instead of skills class and col classes for the div tags included it instead of display:flex but in css we have to show the row class with an id we need to define for this div tag like id:#skills -->
+                            <div class="col-12 col-md-3">
+                                <p class="number">11+</p>
+                                <p>Partners</p>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <p class="number">55+</p>
+                                <p>Projects Done</p>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <p class="number">89+</p>
+                                <p>Happy Clients</p>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <p class="number">150+</p>
+                                <p>Meetings</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <button type="submit" >
+                                    <i class="fa fa-download"></i>
+                                    Download Resume
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <!-- My Price -->
+                        <h3 class="subtitle">My Price</h3>
+
+                        <div class="price row">
+                            <div class="col-12 col-md-6 ">
+                                <table>
+                                    <tr><th>Basic</th></tr>
+                                    <tr><td>Web Design</td></tr>
+                                    <tr><td>Photography</td></tr>
+                                    <tr><td>5GB Storage</td></tr>
+                                    <tr><td>Mail Support</td></tr>
+                                    <tr><td id="exception1">$ 10</td></tr>
+                                    <tr><td id="exception2">per month</td></tr>
+                                    <tr><td id="signup"><button type="submit">Sign Up</button></td></tr>
+                                </table>
+                            </div>
+
+                            <div class="col-12 col-md-6 mt-3 mt-md-0">
+                                <table>
+                                    <tr><th>Pro</th></tr>
+                                    <tr><td>Web Design</td></tr>
+                                    <tr><td>Photography</td></tr>
+                                    <tr><td>5GB Storage</td></tr>
+                                    <tr><td>Endless Support</td></tr>
+                                    <tr><td id="exception1">$ 25</td></tr>
+                                    <tr><td id="exception2">per month</td></tr>
+                                    <tr><td id="signup"><button type="submit">Sign Up</button></td></tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <!-- My Reputation -->
+                        <h3 class="subtitle">My Reputation</h3>
+
+                        <div class="reputation">
+                            <img src="image/bandmember.jpg" alt="bandmember">
+                            <div class="discription1">
+                                <div class="discription2">
+                                    <p>Chris Fox.</p>
+                                    <p>CEO at Mighty Schools.</p>
+                                </div>
+                                <p>John Doe saved us from a web disaster.</p>
+                            </div>
+                        </div>
+
+                        <div class="reputation">
+                            <img src="image/avatar_g2.jpg" alt="avatar">
+                            <div class="discription1">
+                                <div class="discription2">
+                                    <p>Rebecca Flex.</p>
+                                    <p>CEO at Company.</p>
+                                </div>
+                                <p>No one is better than John Doe.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="photos" class="myphoto">
+                        <h2 class="title">My Photos</h2>
+
+                        <br>
+                        <br>
+
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <img src="image/wedding.jpg" alt="wedding">
+                                <img src="image/rocks.jpg" alt="rocks">
+                                <img src="image/sailboat.jpg" alt="sailboat">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img src="image/underwater.jpg" alt="underwater">
+                                <img src="image/chef.jpg" alt="chef">
+                                <img src="image/wedding.jpg" alt="wedding">
+                                <img src="image/machine.jpg" alt="machine">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="contact" class="contact">
+                        <h2 class="title">Contact Me</h2>
+
+                        <div class="icon">
+                            <i class='fas fa-map-marker-alt'></i>
+                            <p>Chicago, US</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                            <p> Phone: +00 151515</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-envelope"></i>
+                            <p>Email: mail@mail.com</p>
+                        </div>
+
+                        <p class="message">Let's get in touch. Send me a message:</p>
+
+                        <form action="">
+                            <input type="text" placeholder="Name">
+                            
+                            <input type="email" placeholder="Email">
+                            
+                            <input type="text" placeholder="Subject">
+                            
+                            <input type="text" placeholder="Message">
+                    
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <button type="submit">
+                                        <i class="fa fa-paper-plane"></i>
+                                        SEND MESSAGE
+                                    </button>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+
+                <footer class="footer pb-5 ps-5">
+                    <i class="fa fa-facebook-square"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-snapchat"></i>
+                    <i class="fa fa-pinterest"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin"></i>
+
+                    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">W3.css</a></p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script src=""></script>
+
+</html>
